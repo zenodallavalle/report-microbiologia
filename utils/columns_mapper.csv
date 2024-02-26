@@ -1,0 +1,37 @@
+nome_colonna,valore
+Id Esame,id_esame
+Id Antibiotico,id_antibiotico
+Nome Antibiotico,nome_antibiotico
+Id Paziente,id_paziente
+Cognome Paziente,cognome_paziente
+Nome Paziente,nome_paziente
+Data di nascita,data_nascita
+Sesso,sesso
+Data di ricovero,data_ricovero
+Data di dimissione,data_dimissione
+Id Reparto,id_reparto
+Nome Reparto,nome_reparto
+Data di accettazione,data_accettazione
+Id Richiesta,id_richiesta
+Data di prelievo,data_prelievo
+Id Analisi,id_analisi
+Nome Analisi,nome_analisi
+Id Analisi Elementare,id_analisi_elementare
+Nome Analisi Elementare,nome_analisi_elementare
+Id Materiale,id_materiale
+Nome Materiale,nome_materiale
+Id Provenienza,id_provenienza
+Nome Provenienza,nome_provenienza
+Id Microbo,id_microbo
+Nome Microbo,nome_microbo
+Betalattamasi,betalattamasi
+ESBL,esbl
+Id Risultato,id_risultato
+Descr Risultato,descrizione_risultato
+Int Risultato,int_risultato
+Info Risultato,info_risultato
+Id Ricovero,id_ricovero
+Microrganismo,microrganismo
+Materiale,materiale
+Analisi,analisi
+RisultatoQuantitativo,risultato_quantitativo

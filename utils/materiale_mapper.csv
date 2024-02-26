@@ -1,0 +1,44 @@
+id_materiale,nome_materiale,tags
+B,BRONCOLAVAGGIO,sorv_pass|respiratorio
+BA,BRONCOASPIRATO,sorv_pass|respiratorio
+BG,BIOPSIA GASTRICA,sorv_pass
+BI,BIOPSIA,sorv_pass
+CS,CORNEA SCRAPING,sorv_pass
+CV,CATETERE VASCOLARE,sorv_pass|sangue|sangue+liquor
+DI,ACQUA INGRESSO MACCHINA DIALIS,sorv_pass
+DP,ACQUA PREFILTRO BAGNO DIALISI,sorv_pass
+E,ESPETTORATO,sorv_pass|respiratorio
+F,FECI,sorv_pass
+L,LIQUIDO CEFALORACHIDIANO,sorv_pass|liquor|sangue+liquor
+LC,LIQUIDO PERICARDICO,sorv_pass
+LD,LIQUIDO DRENAGGIO,sorv_pass
+LI,LIQUIDO PERITONEALE,sorv_pass
+LP,LIQUIDO PLEURICO,sorv_pass
+LS,LIQUIDO SINOVIALE,sorv_pass
+M,MATERIALE,sorv_pass
+MB,MATERIALE BIOLOGICO,sorv_pass
+MI,MIDOLLO,sorv_pass|
+MV,MATERIALE,sorv_pass
+NS,NEFROSTOMIA,sorv_pass|urine
+PR,PROTESI,sorv_pass
+PU,PUS,sorv_pass
+S,SIERO,sorv_pass
+Sg,SANGUE,sorv_pass|sangue|sangue+liquor
+SP,SPERMA,sorv_pass
+TA,TAMPONE AURICOLARE,sorv_pass
+TB,TAMPONE ANALE,sorv_att
+TC,TAMPONE CONGIUNTIVALE,sorv_pass
+TE,TAMPONE ENDOCERVICALE,sorv_pass
+TF,TAMPONE FARINGEO,sorv_pass
+TN,TAMPONE NASALE,sorv_pass
+TR,TAMPONE RETTALE,sorv_pass
+TU,TAMPONE URETRALE,sorv_pass
+TV,TAMPONE VAGINALE,sorv_pass
+U,URINE ESTEMPORANEE-U,sorv_pass|urine
+UA,URINE PRIMO GETTO,sorv_pass|urine
+UC,URINE DA CATETERE,sorv_pass|urine|urine_cv
+UM,URINE MITTO INTERMEDIO,sorv_pass|urine
+US,URINE DA SACCHETTO-US,sorv_pass|urine
+UT,URINE TRAPIANTI-UT,sorv_pass|urine
+VC,VALVOLA CARDIACA,sorv_pass
+VV,TAMPONE VULVO-VESTIBOLARE,sorv_pass

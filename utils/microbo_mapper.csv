@@ -1,0 +1,351 @@
+id_microbo,nome_microbo,id_gruppo_microbo,nome_gruppo_microbo
+achxyl,Achromobacter xylosoxidans,,
+acibau,Acinetobacter baumannii,acibcx,Acinetobacter baumannii complex
+acibcx,Acinetobacter baumannii complex,acibcx,Acinetobacter baumannii complex
+acigen,Acinetobacter genospecies 3,,
+acihae,Acinetobacter haemolyticus,,
+acijun,Acinetobacter junii,,
+acilwo,Acinetobacter lwoffii,,
+acispe,Acinetobacter species,,
+acteur,Actinomyces europaeus,,
+actodo,Actinomyces odontolyticus,,
+aercav,Aeromonas punctata,aerspp,Aeromonas species
+aerdro,Aeromonas hydrophila,aerspp,Aeromonas species
+aerhyd,Aeromonas hydrophila/caviae,aerspp,Aeromonas species
+aersob,Aeromonas sobria,aerspp,Aeromonas species
+aervir,Aerococcus viridans,,
+afb,Bacilli acido-alcool resistenti,,
+alcxld,Achromobacter xylosoxidans ssp denitrificans,,
+aspfla,Aspergillus flavus,,
+aspfum,Aspergillus fumigatus,,
+aspnig,Aspergillus niger,,
+aspspp,Aspergillus species,,
+aspspp2,Aspergillus species,,
+aspspp3,Aspergillus species,,
+aspter,Aspergillus terreus,,
+aun,Aerococcus urinae,,
+bacbiv,Prevotella bivia,,
+bacbuc,Prevotella buccae,,
+baccer,Bacillus cereus,,
+baccir,Bacillus circulans,,
+bacdit,Bacteroides distasonis,,
+bacfra,Bacteroides fragilis,,
+baclic,Bacillus licheniformis,,
+bacspp,Bacillus species,,
+bacthe,Bacteroides thetaiotaomicron,,
+bacuni,Bacteroides uniformis,,
+bacvul,Bacteroides vulgatus,,
+bctspp,Bacteroides species,,
+bgnegt,Bastoncini Gram negativi,,
+borbro,Bordetella bronchiseptica,,
+bracat,Moraxella catarrhalis,,
+bvc,Brevibacterium casei,,
+camfet,Campylobacter fetus,camspp,Campylobacter species
+camjej,Campylobacter jejuni,camspp,Campylobacter species
+canalb,Candida albicans,canspp,Candida species
+candub,Candida dubliniensis,canspp,Candida species
+canfam,Candida famata (Debaryomyces hansenii),canspp,Candida species
+cangla,Candida glabrata,canspp,Candida species
+cangui,Pichia guilliermondii,,
+cankru,Candida krusei (Issatchenkia orientalis),canspp,Candida species
+canlus,Clavispora lusitaniae,,
+cannal,Candida species not albicans,canspp,Candida species
+canpar,Candida parapsilosis,canspp,Candida species
+cansph,Kluyveromyces lactis,,
+cantro,Candida tropicalis,canspp,Candida species
+canuti,Pichia jadinii,,
+cd2,Corynebacterium urealyticum,,
+cdcve2,Pseudomonas oryzihabitans,,
+ci2,Corynebacterium amycolatum,,
+citama,Citrobacter amalonaticus,citspp,Citrobacter species
+citbra,Citrobacter braakii,citspp,Citrobacter species
+citdiv,Citrobacter koseri,citspp,Citrobacter species
+citfre,Citrobacter freundii,citspp,Citrobacter species
+citryo,Citrobacter youngae,citspp,Citrobacter species
+clodif,Clostridium difficile,clodif,Clostridioides difficile
+clodta,Clostridium difficile tossina A e B,clodif,Clostridioides difficile
+cloper,Clostridium perfringens,,
+closep,Clostridium septicum,,
+corglu,Corynebacterium glucuronolyticum,,
+corjk,Corynebacterium jeikeium,,
+corspe,Corynebacterium species,,
+corstr,Corynebacterium striatum,,
+cryneo,Cryptococcus neoformans,,
+derhom,Dermatobia hominis,,
+eikcor,Eikenella corrodens,,
+entaer,Enterobacter aerogenes,enbaco,Enterobacter cloacae complex
+entagg,Pantoea agglomerans,,
+entasb,Enterobacter asburiae,enbaco,Enterobacter cloacae complex
+entcas,Enterococcus casseliflavus,,
+entcla,Enterobacter cloacae / asburiae,enbaco,Enterobacter cloacae complex
+entclo,Enterobacter cloacae,enbaco,Enterobacter cloacae complex
+entcpx,Enterobacter cloacae complex,enbaco,Enterobacter cloacae complex
+entgal,Enterococcus gallinarum,entspp,Enterococcus species
+enthir,Enterococcus hirae,entspp,Enterococcus species
+enthor,Enterobacter hormaechei,enbaco,Enterobacter cloacae complex
+entspp,Enterococcus species,entspp,Enterococcus species
+era,Enterococcus raffinosus,entspp,Enterococcus species
+esccol,Escherichia coli,,
+eublen,Eggerthella lenta,,
+fuaspp,Fusarium species,,
+fusnec,Fusobacterium necrophorum,,
+fusnuc,Fusobacterium nucleatum,,
+garvag,Gardnerella vaginalis,,
+gha,Gemella haemolysans,,
+graadi,Granulicatella adiacens,,
+haeinf,Haemophilus influenzae,,
+haepar,Haemophilus parainfluenzae,,
+hafalv,Hafnia alvei,,
+hpy,Helicobacter pylori,,
+kkr,Kocuria kristinae,,
+kleorn,Raoultella ornithinolytica,,
+kleoxy,Klebsiella oxytoca,,
+klepla,Raoultella planticola,,
+klepne,Klebsiella pneumoniae ssp pneumoniae,klepne,Klebsiella pneumoniae
+klpnsp,Klebsiella pneumoniae,klepne,Klebsiella pneumoniae
+kleppt,Klebsiella pneumoniae ssp pneumoniae/(K.planticola/terrig.),klepne,Klebsiella pneumoniae
+klepo,Klebsiella pneumoniae / Klebsiella oxytoca,klepne,Klebsiella pneumoniae
+klespe,Klebsiella species,,
+lacspp,Lactobacillus species,,
+leggr1,Legionella pneumophila Gr. 1,legpne,Legionella pneumophila
+legpna,Legionella pneumophila antigene
+legpne,Legionella pneumophila,legpne,Legionella pneumophila
+lismoc,Listeria monocytogenes,,
+mho,Mycoplasma hominis,,
+mib,Microbacterium species,,
+miclut,Micrococcus luteus,,
+micspp,Micrococcus species,,
+mormor,Morganella morganii,,
+mrxlac,Moraxella lacunata,,
+mrxnon,Moraxella nonliquefaciens,,
+mycbas,Mycobacterium austroafricanum/vanbaalenii,mott,Myobacterium other than tuberculosis
+micasm,Mycobacterium abscessus s.massiliense,mott,Myobacterium other than tuberculosis
+mycvip,Mycobacterium avium spp paratuberculosis,mott,Myobacterium other than tuberculosis
+myccao,Mycobacterium canariasense/cosmeticum,mott,Myobacterium other than tuberculosis
+mycoch,Mycobacterium chimaera intracellulare gruppo,mott,Myobacterium other than tuberculosis
+mycmuh,Mycobacterium mucogenicum phocaicum group,mott,Myobacterium other than tuberculosis
+mycspe,Mycobacterium species,mott,Myobacterium other than tuberculosis
+mycabs,Mycobacterium abscessus,mott,Myobacterium other than tuberculosis
+myadgr,Mycobacterium abscessus group,mott,Myobacterium other than tuberculosis
+myabbb,Mycobacterium abscessus s.abscessus,mott,Myobacterium other than tuberculosis
+myabbo,Mycobacterium abscessus s. bolletii,mott,Myobacterium other than tuberculosis
+mycfrc,Mycobacterium africanum,mott,Myobacterium other than tuberculosis
+mycbaa,Mycobacterium alsense,mott,Myobacterium other than tuberculosis
+mycbal,Mycobacterium alvei,mott,Myobacterium other than tuberculosis
+mycbao,Mycobacterium arosiense,mott,Myobacterium other than tuberculosis
+mycbar,Mycobacterium arupense,mott,Myobacterium other than tuberculosis
+mycasi,Mycobacterium asiaticum,mott,Myobacterium other than tuberculosis
+mycbab,Mycobacterium aubagnense,mott,Myobacterium other than tuberculosis
+mycbau,Mycobacterium aurum,mott,Myobacterium other than tuberculosis
+mycavi,Mycobacterium avium,mott,Myobacterium other than tuberculosis
+mycavc,Mycobacterium avium complex,mott,Myobacterium other than tuberculosis
+mycava,Mycobacterium avium spp avium,mott,Myobacterium other than tuberculosis
+mycbav,Mycobacterium avium spp silvaticum,mott,Myobacterium other than tuberculosis
+mycmac,Mycobacterium avium/intracellulare,mott,Myobacterium other than tuberculosis
+mycbac,Mycobacterium bacteremicum,mott,Myobacterium other than tuberculosis
+mycbbe,Mycobacterium boenickei,mott,Myobacterium other than tuberculosis
+mycbra,Mycobacterium branderi,mott,Myobacterium other than tuberculosis
+mycbri,Mycobacterium brisbanense,mott,Myobacterium other than tuberculosis
+myccan,Mycobacterium canariasense,mott,Myobacterium other than tuberculosis
+myccel,Mycobacterium celatum,mott,Myobacterium other than tuberculosis
+myccer,Mycobacterium celeriflavum,mott,Myobacterium other than tuberculosis
+mycche,Mycobacterium chelonae,mott,Myobacterium other than tuberculosis
+mycchm,Mycobacterium chimaera,mott,Myobacterium other than tuberculosis
+mycchi,Mycobacterium chimerae,mott,Myobacterium other than tuberculosis
+myccol,Mycobacterium colombiense,mott,Myobacterium other than tuberculosis
+myccoc,Mycobacterium conceptionense,mott,Myobacterium other than tuberculosis
+myccon,Mycobacterium confluentis,mott,Myobacterium other than tuberculosis
+myccop,Mycobacterium conspicuum,mott,Myobacterium other than tuberculosis
+myccos,Mycobacterium cosmeticum,mott,Myobacterium other than tuberculosis
+mycmot,Mycobacterium eccetto tuberculosis,mott,Myobacterium other than tuberculosis
+mycele,Mycobacterium elephantis,mott,Myobacterium other than tuberculosis
+myceng,Mycobacterium engbaekii,mott,Myobacterium other than tuberculosis
+myceur,Mycobacterium europaeum,mott,Myobacterium other than tuberculosis
+mycfar,Mycobacterium farcinogenes,mott,Myobacterium other than tuberculosis
+mycfla,Mycobacterium flavescens,mott,Myobacterium other than tuberculosis
+mycflo,Mycobacterium florentinum,mott,Myobacterium other than tuberculosis
+mycfor,Mycobacterium fortuitum,mott,Myobacterium other than tuberculosis
+myfogr,Mycobacterium fortuitum group,mott,Myobacterium other than tuberculosis
+mycfra,Mycobacterium fragae,mott,Myobacterium other than tuberculosis
+mycgad,Mycobacterium gadium,mott,Myobacterium other than tuberculosis
+mycgas,Mycobacterium gastri,mott,Myobacterium other than tuberculosis
+mycgen,Mycobacterium genavense,mott,Myobacterium other than tuberculosis
+mycgoo,Mycobacterium goodii,mott,Myobacterium other than tuberculosis
+mycgor,Mycobacterium gordonae,mott,Myobacterium other than tuberculosis
+mychae,Mycobacterium haemophilum,mott,Myobacterium other than tuberculosis
+mychas,Mycobacterium hassiacum,mott,Myobacterium other than tuberculosis
+mychec,Mycobacterium heckeshornense,mott,Myobacterium other than tuberculosis
+mychei,Mycobacterium heidelbergense,mott,Myobacterium other than tuberculosis
+mychou,Mycobacterium houstonense,mott,Myobacterium other than tuberculosis
+mycimm,Mycobacterium immunogenum,mott,Myobacterium other than tuberculosis
+mycins,Mycobacterium insubricum,mott,Myobacterium other than tuberculosis
+mycinj,Mycobacterium interjectum,mott,Myobacterium other than tuberculosis
+mycine,Mycobacterium intermedium,mott,Myobacterium other than tuberculosis
+mycint,Mycobacterium intracellulare,mott,Myobacterium other than tuberculosis
+mycira,Mycobacterium iranicum,mott,Myobacterium other than tuberculosis
+myckan,Mycobacterium kansasii,mott,Myobacterium other than tuberculosis
+myckac,Mycobacterium kansasii complex,mott,Myobacterium other than tuberculosis
+myckor,Mycobacterium koreense,mott,Myobacterium other than tuberculosis
+myckub,Mycobacterium kubicae,mott,Myobacterium other than tuberculosis
+myckum,Mycobacterium kumamotonense,mott,Myobacterium other than tuberculosis
+myckyo,Mycobacterium kyorinense,mott,Myobacterium other than tuberculosis
+myclen,Mycobacterium lentiflavum,mott,Myobacterium other than tuberculosis
+myclep,Mycobacterium leprae,mott,Myobacterium other than tuberculosis
+myclon,Mycobacterium longobardum,mott,Myobacterium other than tuberculosis
+mycmag,Mycobacterium magaritense,mott,Myobacterium other than tuberculosis
+mycmal,Mycobacterium malmoense,mott,Myobacterium other than tuberculosis
+mycmar, Mycobacterium marinum, mott, Myobacterium other than tuberculosis
+mymaul,Mycobacterium marinum/ulcerans,mott,Myobacterium other than tuberculosis
+mycmas,Mycobacterium marseillense,mott,Myobacterium other than tuberculosis
+mycmic,Mycobacterium microti,mott,Myobacterium other than tuberculosis
+mycmuc,Mycobacterium mucogenicum,mott,Myobacterium other than tuberculosis
+mycmur, Mycobacterium murale, mott, Myobacterium other than tuberculosis
+mycneb,Mycobacterium nebraskense,mott,Myobacterium other than tuberculosis
+mycneo,Mycobacterium neoaurum,mott,Myobacterium other than tuberculosis
+mycnew,Mycobacterium neworleansense,mott,Myobacterium other than tuberculosis
+mycnon, Mycobacterium nonchromogenicum, mott, Myobacterium other than tuberculosis
+mycnoo,Mycobacterium novocastrense,mott,Myobacterium other than tuberculosis
+mycobu,Mycobacterium obuense,mott,Myobacterium other than tuberculosis
+mycpal,Mycobacterium palustre,mott,Myobacterium other than tuberculosis
+mycpag,Mycobacterium paragordonae,mott,Myobacterium other than tuberculosis
+mycpac,Mycobacterium parascrofulaceum,mott,Myobacterium other than tuberculosis
+mycpae,Mycobacterium paraseoulense,mott,Myobacterium other than tuberculosis
+mycpar,Mycobacterium parmense,mott,Myobacterium other than tuberculosis
+mycper,Mycobacterium peregrinum,mott,Myobacterium other than tuberculosis
+mycphl,Mycobacterium phlei,mott,Myobacterium other than tuberculosis
+mycpho,Mycobacterium phocaicum,mott,Myobacterium other than tuberculosis
+mycpor,Mycobacterium porcinum,mott,Myobacterium other than tuberculosis
+mycrho, Mycobacterium rhodesiae, mott, Myobacterium other than tuberculosis
+mycriy,Mycobacterium riyadhense,mott,Myobacterium other than tuberculosis
+mycsao,Mycobacterium saopaulense,mott,Myobacterium other than tuberculosis
+mycsas,Mycobacterium saskatchewanense,mott,Myobacterium other than tuberculosis
+mycscr,Mycobacterium scrofulceum,mott,Myobacterium other than tuberculosis
+mycsee,Mycobacterium senegalense,mott,Myobacterium other than tuberculosis
+mycsen,Mycobacterium senuense,mott,Myobacterium other than tuberculosis
+mycseo,Mycobacterium seoulense,mott,Myobacterium other than tuberculosis
+mycsep,Mycobacterium septicum,mott,Myobacterium other than tuberculosis
+mycset,Mycobacterium setense,mott,Myobacterium other than tuberculosis
+mycshe,Mycobacterium sherrisii,mott,Myobacterium other than tuberculosis
+mycshi,Mycobacterium shimoidei,mott,Myobacterium other than tuberculosis
+mycshn,Mycobacterium shinjukuense,mott,Myobacterium other than tuberculosis
+mycsim,Mycobacterium simiae,mott,Myobacterium other than tuberculosis
+myesme,Mycobacterium smegmatis,mott,Myobacterium other than tuberculosis
+mycsp1,Mycobacterium species,mott,Myobacterium other than tuberculosis
+mycszu,Mycobacterium szulgai,mott,Myobacterium other than tuberculosis
+mycter,Mycobacterium terrae,mott,Myobacterium other than tuberculosis
+myctrc,Mycobacterium terrae complex,mott,Myobacterium other than tuberculosis
+mycthe,Mycobacterium thermoresistibile,mott,Myobacterium other than tuberculosis
+myctrp,Mycobacterium triplex,mott,Myobacterium other than tuberculosis
+myctri,Mycobacterium triviale,mott,Myobacterium other than tuberculosis
+myctus,Mycobacterium tusciae,mott,Myobacterium other than tuberculosis
+myculc,Mycobacterium ulcerans,mott,Myobacterium other than tuberculosis
+mycvac,Mycobacterium vaccae,mott,Myobacterium other than tuberculosis
+mycvul,Mycobacterium vulneris,mott,Myobacterium other than tuberculosis
+mycvol,Mycobacterium wolinskyi,mott,Myobacterium other than tuberculosis
+mycxen,Mycobacterium xenopi,mott,Myobacterium other than tuberculosis
+mycbov,Mycobacterium bovis,myctuc,Mycobacterium tuberculosis complex
+mycbobo,Mycobacterium bovis subspecies bovis,myctuc,Mycobacterium tuberculosis complex
+mycboca,Mycobacterium bovis subspecies caprae,myctuc,Mycobacterium tuberculosis complex
+myctub,Mycobacterium tuberculosis,myctuc,Mycobacterium tuberculosis complex
+myctuc,M. tuberculosis complex,myctuc,Mycobacterium tuberculosis complex
+myctuc2,M. tuberculosis complex,myctuc,Mycobacterium tuberculosis complex
+mytuca,Mycobacterium tuberculosis/canettii,myctuc,Mycobacterium tuberculosis complex
+neigon,Neisseria gonorrhoeae,,
+neimen,Neisseria meningitidis,,
+neisub,Neisseria subflava,,
+nocspp,Nocardia species,,
+nor,Norovirus,,
+paespp,Paecilomyces species,,
+pan,Pantoea species,,
+pepsac,Staphylococcus saccharolyticus,,
+ppr,Propionibacterium propionicum,,
+proacn,Propionibacterium acnes,,
+promir,Proteus mirabilis,prospp,Proteus species
+proret,Providencia rettgeri,,
+prostu,Providencia stuartii,,
+provul,Proteus vulgaris,prospp,Proteus species
+propen,Proteus penneri,prospp,Proteus species
+pseaci,Delftia acidovorans,,
+pseaer,Pseudomonas aeruginosa,,
+psecep,Burkholderia cepacia,,
+psedim,Brevundimonas diminuta,,
+pseflu,Pseudomonas fluorescens,psespp,Pseudomonas species
+psemal,Stenotrophomonas maltophilia,,
+psepau,Sphingomonas paucimobilis,,
+psepsu,Pseudomonas pseudoalcaligenes,,
+pseput,Pseudomonas putida,psespp,Pseudomonas species
+pstasa,Peptoniphilus asaccharolyticus,,
+pstmic,Peptostreptococcus micros,,
+rhzspp,Rhizobium species,,
+ros,Roseomonas species,,
+rtv,Human rotavirus,,
+saccer,Saccharomyces cerevisiae,,
+salgcd,Salmonella group d,salgad,Salmonella gruppo A-D
+salgra,Salmonella group a,salgad,Salmonella gruppo A-D
+salgrb,Salmonella group b,salgad,Salmonella gruppo A-D
+salgrc,Salmonella group c,salgad,Salmonella gruppo A-D
+salspe,Salmonella species,,
+scp,Staphylococcus caprae,,
+sdf,Abiotrophia defectiva,,
+serfic,Serratia ficaria,,
+serliq,Serratia liquefaciens,,
+sermar,Serratia marcescens,,
+serodo,Serratia odorifera,,
+staaui,Staphylococcus auricularis,,
+staaur,Staphylococcus aureus,,
+stacap,Staphylococcus capitis,,
+staepi,Staphylococcus epidermidis,,
+stahae,Staphylococcus haemolyticus,,
+stahho,Staphylococcus hominis ssp hominis,,
+stahom,Staphylococcus hominis,,
+staint,Staphylococcus intermedius,,
+stalug,Staphylococcus lugdunensis,,
+stamrsa,S. aureus meticillino resistente,,
+stasap,Staphylococcus saprophyticus,,
+stasch,Staphylococcus schleiferi,,
+stasco,Staphylococcus cohnii ssp cohnii,,
+stasim,Staphylococcus simulans,,
+stawar,Staphylococcus warneri,,
+straga,Streptococcus agalactiae,,
+strang,Streptococcus anginosus,,
+stravi,Enterococcus avium,entspp,Enterococcus species
+strcon,Streptococcus constellatus,
+strdys,Streptococcus dysgalactiae ssp dysgalactiae,
+streqs,Streptococcus dysgalactiae ssp equisimilis,,
+strfac,Enterococcus faecium,entspp,Enterococcus species
+strfae,Enterococcus faecalis,entspp,Enterococcus species
+strgal,Streptococcus gallolyticus,
+strgor,Streptococcus gordonii,,
+strinf,Streptococcus infantarius,,
+strint,Streptococcus intermedius,
+strmo,Streptococcus mitis/ Streptococcus oralis,
+strpar,Streptococcus parasanguinis,
+strpas,Streptococcus pasteuri,,
+strpna,Streptococcus pneumoniae antigene,,
+strpne,Streptococcus pneumoniae,,
+strpyo,Streptococcus pyogenes,,
+strsa1,Streptococcus sanguinis,
+strslv,Streptococcus salivarius,,
+strspp,Streptococcus species,,
+strter,Streptococcus thermophilus,,
+strvid,Streptococcus viridans group,,
+triink,Trichosporon inkin,,
+trivag,Trichomonas vaginalis,,
+ureure,Ureaplasma urealyticum,,
+veispp,Veillonella species,,
+vibcho,Vibrio cholerae,,
+bacant,Bacillus anthracis,,
+bclnth,Bacillus anthracis,bacant,Bacillus anthracis
+cordip,Corynebacterium diphtheriae,,
+crydp1,Corynebacterium diphtheriae biotype,cordip,Corynebacterium diphtheriae
+crydp2,Corynebacterium diphtheriae biotype,cordip,Corynebacterium diphtheriae
+crydp3,Corynebacterium diphtheriae biotype,cordip,Corynebacterium diphtheriae
+crydp4,Corynebacterium diphtheriae biotype,cordip,Corynebacterium diphtheriae
+shgbyd,Shigella boydii,shispe,Shigella species
+shgboy,Shigella boydii,shispe,Shigella species
+shidys,Shigella dysenteriae,shispe,Shigella species
+shifle,Shigella flexneri,shispe,Shigella species
+shigrp,Shigella group,shispe,Shigella species
+shison,Shigella sonnei,shispe,Shigella species
+shispe,Shigella species,,
+yerpst,Yersinia pestis,,

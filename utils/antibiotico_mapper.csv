@@ -1,0 +1,67 @@
+id_antibiotico,nome_antibiotico
+SXT,Cotrimoxazolo
+GEN,Gentamicina
+CIP,Ciprofloxacina
+TZP,Piperacillina/Tazobactam
+MEM,Meropenem
+FEP,Cefepime
+AMC,Amoxicillina/Clavulanico
+AMK,Amikacina
+CAZ,Ceftazidime
+IPM,Imipenem
+CTX,Cefotaxime
+LNZ,Linezolid
+VAN,Vancomicina
+TOB,Tobramicina
+LVX,Levofloxacina
+ESBL,Beta lattamasi ampio spettro
+CLI,Clindamicina
+ERY,Eritromicina
+TEC,Teicoplanina
+DAP,Daptomicina
+RIF,Rifampicina
+ICR,R.Indotta da Clindamicina
+TCY,Tetraciclina
+OXA,Oxacillina
+AMP,Ampicillina
+KAH,Kanamicina-high
+STH,Streptomicina 1000
+NIT,Nitrofurantoina
+TIG,Tigeciclina
+MDR,Multi Drug Resistence
+PEN,Penicillina
+COL,Colistina
+CASP,Caspofungina
+FLU,Fluconazolo
+ATM,Aztreonam
+CRO,Ceftriaxone
+CZA,Ceftazidime-Avibactam
+VOR,Voriconazolo
+C/T,Ceftolozane-Tazobactam
+KPC,Carbapenemasi di tipo KPC
+FOS,Fosfomicina
+NDM,Carbapenemasi di tipo NDM
+MBL,Carbapenemasi di tipo MBL
+CARBA,Carbapenemasi di tipo KPC
+BETA,BETALATTAMASI
+BPE,Benzylpenicillin
+OXSF,Cefoxitina Screening
+SAM,Ampicillina/Sulbactam
+MFX,Moxifloxacina
+TLT,Telitromicina
+ETP,Ertapenem
+STR,Streptomicina
+ETH,Etambutolo
+PZA,Pirazinamide
+INH0.1,Isoniazide 0.1
+AZM,Azitromicina
+QDA,Quinupristina/Dalfopristina
+MTR,Metronidazolo
+CLR,Claritromicina
+FUS,Acido Fusidico
+MUP,Mupirocina
+TMP,Trimethoprim
+AMX,Amoxicillina
+INH0.4,Isoniazide 0.4
+CHL,Cloramfenicolo
+PIP,Piperacillina
