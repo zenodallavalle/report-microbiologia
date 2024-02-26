@@ -8,6 +8,7 @@
   - [Setup iniziale](#setup-iniziale)
   - [Utilizzo](#utilizzo)
     - [Opzioni](#opzioni)
+  - [Correzioni manuali al database](#correzioni-manuali-al-database)
   - [Istruzioni](#istruzioni)
     - [`instructions`](#instructions)
     - [`rate_instructions`](#rate_instructions)
@@ -64,6 +65,12 @@ L'unico argomento obbligatorio è l'anno, mentre gli altri sono opzionali, inclu
 - `--n-admissions N_ADMISSIONS`, `-n N_ADMISSIONS`
 
   Il numero di ricoveri (o pazienti) da considerare per il calcolo dei tassi di isolamenti per 1.000 ricoveri (o pazienti). Se assente questi non verranno calcolati. (default: `None`)
+
+## Correzioni manuali al database
+
+Tramite il file `manual_db_adds.xlsx` è possibile aggiungere manualmente delle righe al database. Il file deve essere compilato seguendo il modello che viene fornito con il programma.
+
+**Attenzione, questo file dopo la compilazione conterrà informazioni sensibili e non deve essere condiviso.**
 
 ## Istruzioni
 
