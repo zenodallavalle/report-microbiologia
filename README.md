@@ -68,7 +68,7 @@ L'unico argomento obbligatorio è l'anno, mentre gli altri sono opzionali, inclu
 
 ## Correzioni manuali al database
 
-Tramite il file `manual_db_adds.xlsx` è possibile aggiungere manualmente delle righe al database. Il file deve essere compilato seguendo il modello che viene fornito con il programma.
+Tramite il file `manual_db_adds.xlsx` è possibile aggiungere manualmente delle righe al database. Il file deve essere compilato seguendo il modello che viene fornito con il programma e permette di aggiungere solo dei risultati per gli antibiotici testati. In sostanza non è possibile aggiungere un nuovo isolato, ma solo dei risultati per un microorganismo già isolato da quel paziente associato a quel preciso numero di richiesta. Questo è dovuto al fatto che per ricavare le informazioni mancanti nel file manual_db_adds.xlsx le osservazioni aggiunte vengono matchate con le osservazioni già presenti nel database secondo i campi: "cognome_paziente", "nome_paziente", "id_richiesta", "id_microbo". Se non viene trovata nessuna corrispondenza l'osservazione viene scartata.
 
 **Attenzione, questo file dopo la compilazione conterrà informazioni sensibili e non deve essere condiviso.**
 
