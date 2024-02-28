@@ -297,8 +297,6 @@ def _load_manual_db_adds(df):
     manual_db_adds = pd.read_excel(
         "manual_db_adds.xlsx",
         dtype={
-            "cognome_paziente": str,
-            "nome_paziente": str,
             "id_richiesta": str,
             "id_microbo": str,
             "id_antibiotico": str,
@@ -310,8 +308,6 @@ def _load_manual_db_adds(df):
     print(f'Readed {len(manual_db_adds)} manual_db_adds from "manual_db_adds.xlsx"')
     manual_db_adds = manual_db_adds.reindex(
         columns=[
-            "cognome_paziente",
-            "nome_paziente",
             "id_richiesta",
             "id_microbo",
             "id_antibiotico",
@@ -327,11 +323,9 @@ def _load_manual_db_adds(df):
                 "risultato_quantitativo",
                 "source",
             ]
-        ).drop_duplicates(
-            subset=["cognome_paziente", "nome_paziente", "id_richiesta", "id_microbo"]
-        ),
+        ).drop_duplicates(subset=["id_richiesta", "id_microbo"]),
         manual_db_adds,
-        on=["cognome_paziente", "nome_paziente", "id_richiesta", "id_microbo"],
+        on=["id_richiesta", "id_microbo"],
         how="right",
     )
     if (

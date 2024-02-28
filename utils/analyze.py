@@ -61,6 +61,7 @@ def analyze(
         check_resistance_and_validity,
         keep_cols=[
             "nome_gruppo_microbo",
+            "id_microbo",
             "nome_microbo",
             "id_reparto",
             "nome_reparto",
@@ -145,6 +146,7 @@ def analyze(
                         "nome_reparto",
                         "id_gruppo_microbo",
                         "nome_gruppo_microbo",
+                        "id_microbo",
                         "nome_microbo",
                         "resistente",
                         "n_resistenze",
@@ -177,6 +179,7 @@ def analyze(
                         "nome_reparto",
                         "id_gruppo_microbo",
                         "nome_gruppo_microbo",
+                        "id_microbo",
                         "nome_microbo",
                         drop_column,
                     ]
@@ -277,6 +280,7 @@ def analyze(
                 "nome_reparto",
                 "id_gruppo_microbo",
                 "nome_gruppo_microbo",
+                "id_microbo",
                 "nome_microbo",
                 "resistente",
                 "n_resistenze",

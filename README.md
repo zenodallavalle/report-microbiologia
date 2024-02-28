@@ -68,7 +68,7 @@ L'unico argomento obbligatorio è l'anno, mentre gli altri sono opzionali, inclu
 
 ## Correzioni manuali al database
 
-Tramite il file `manual_db_adds.xlsx` è possibile aggiungere manualmente delle righe al database. Il file deve essere compilato seguendo il modello che viene fornito con il programma e permette di aggiungere solo dei risultati per gli antibiotici testati. In sostanza non è possibile aggiungere un nuovo isolato, ma solo dei risultati per un microorganismo già isolato da quel paziente associato a quel preciso numero di richiesta. Questo è dovuto al fatto che per ricavare le informazioni mancanti nel file manual_db_adds.xlsx le osservazioni aggiunte vengono matchate con le osservazioni già presenti nel database secondo i campi: "cognome_paziente", "nome_paziente", "id_richiesta", "id_microbo". Se non viene trovata nessuna corrispondenza l'osservazione viene scartata.
+Tramite il file `manual_db_adds.xlsx` è possibile aggiungere manualmente delle righe al database. Il file deve essere compilato seguendo il modello che viene fornito con il programma e permette di aggiungere solo dei risultati per gli antibiotici testati. In sostanza non è possibile aggiungere un nuovo isolato, ma solo dei risultati per un microorganismo già isolato da quel paziente associato a quel preciso numero di richiesta. Questo è dovuto al fatto che per ricavare le informazioni mancanti nel file manual_db_adds.xlsx le osservazioni aggiunte vengono matchate con le osservazioni già presenti nel database secondo i campi: "id_richiesta" e "id_microbo". Se non viene trovata nessuna corrispondenza l'osservazione viene scartata.
 
 **Attenzione, questo file dopo la compilazione conterrà informazioni sensibili e non deve essere condiviso.**
 
@@ -117,6 +117,7 @@ id_richiesta tag tags data_prelievo nome_reparto id_gruppo_microbo nome_gruppo_m
 - `nome_reparto`: il nome del reparto in cui è stato prelevato il campione
 - `id_gruppo_microbo`: l'id del gruppo di microbi
 - `nome_gruppo_microbo`: il nome del gruppo di microbi
+- `id_microbo`: l'id del microbo
 - `nome_microbo`: il nome del microbo
 - `resistente`: le resistenze del microbo separate da `|` es. _ESBL|MDR_. Attenzione: se il microbo non è resistente il campo è un testo vuoto, se il microbo non prevede il calcolo della resistenza il campo è `NA`.
 - `n_resistenze`: il numero di resistenze del microbo.
