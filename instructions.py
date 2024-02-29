@@ -44,7 +44,7 @@ sorv_pass_instructions = [
         "sorv_pass",
         "Sorveglianza passiva",
         "legpna",
-        "Antigene legionella (L. pneumophila sg. 1)",
+        "Antigene legionella (L. pneumophila sg. 1) (liquor o urine)",
     ),
     _instruction(
         "sorv_pass", "Sorveglianza passiva", "legpne", "Legionella pneumophila"
@@ -70,7 +70,10 @@ sorv_pass_instructions = [
         "sorv_pass", "Sorveglianza passiva", "staaur", "Staphylococcus aureus"
     ),
     _instruction(
-        "sorv_pass", "Sorveglianza passiva", "strpna", "Antigene streptococcico"
+        "sorv_pass",
+        "Sorveglianza passiva",
+        "strpna",
+        "Antigene pneumococcico (liquor o urine)",
     ),
     _instruction(
         "sorv_pass", "Sorveglianza passiva", "strpne", "Streptococcus pneumoniae"
@@ -137,6 +140,7 @@ sangue_instructions = [
     #
     # altri gram negativi
     _instruction("sangue", "Sangue", "acibcx", "Acinetobacter baumannii complex"),
+    _instruction("sangue", "Sangue", "psecep", "Burkholderia cepacia"),
     _instruction("sangue", "Sangue", "haeinf", "Haemophilus influenzae"),
     _instruction("sangue", "Sangue", "neimen", "Neisseria meningitidis"),
     _instruction("sangue", "Sangue", "pseaer", "Pseudomonas aeruginosa"),
@@ -158,6 +162,7 @@ sangue_instructions = [
     # micobatteri
     #
     # funghi
+    _instruction("sangue", "Sangue", "canalb", "Candida albicans"),
     _instruction("sangue", "Sangue", "canaur", "Candida auris"),
     _instruction("sangue", "Sangue", "canspp", "Candida spp"),
     _instruction("sangue", "Sangue", "cryneo", "Cryptococcus neoformans"),
@@ -315,6 +320,13 @@ instructions = (
     + respiratorio_instructions
 )
 
+
+def count_mdro(df):
+    _only_count = df.id_gruppo_microbo.isin(["sermar", "clodif", "psecep"])
+    _resistant = df.resistente.astype(bool)
+    return _only_count | _resistant
+
+
 rate_instructions = [
     _rate_instruction(
         "sorv_pass",
@@ -324,6 +336,13 @@ rate_instructions = [
         select_fn=lambda df: df.resistente.str.split("|").map(
             lambda x: "MDR" in x, na_action="ignore"
         ),
+    ),
+    _rate_instruction(
+        "sorv_pass",
+        "Sorveglianza passiva (noPS, noMAC)",
+        "enbaco",
+        "Enterobacter cloacae complex (qualunque)",
+        select_fn=lambda df: df.resistente.astype(bool),
     ),
     _rate_instruction(
         "sorv_pass",
@@ -390,62 +409,95 @@ rate_instructions = [
     _rate_instruction(
         "sorv_pass",
         "Sorveglianza passiva (noPS, noMAC)",
-        ["prospp", "kleoxy", "klespp", "citspp", "psespp"],
+        [
+            "prospp",
+            "kleoxy",
+            "klespp",
+            "mormor",
+            "citspp",
+            "psespp",
+            "psecep",
+            "psemal",
+            "strpne",
+            "sermar",
+            "psecep",
+        ],
         "Altri MDRO (qualunque resistenza)",
-        select_fn=lambda df: df.resistente.astype(bool),
+        select_fn=count_mdro,
     ),
     _rate_instruction(
         "sangue",
         "Sangue (noPS, noMAC)",
         [
+            "citspp",
+            "enbaco",
             "acibcx",
             "entspp",
             "esccol",
             "kleoxy",
             "klespp",
             "klepne",
+            "mormor",
             "prospp",
             "pseaer",
+            "psemal",
+            "strpne",
             "psespp",
             "staaur",
+            "sermar",
+            "psecep",
         ],
         "Batteriemie da MDRO (qualunque resistenza)",
-        select_fn=lambda df: df.resistente.astype(bool),
+        select_fn=count_mdro,
     ),
     _rate_instruction(
         "urine",
         "Urine (tutte, noPS, noMAC)",
         [
+            "citspp",
+            "enbaco",
             "acibcx",
             "entspp",
             "esccol",
             "kleoxy",
             "klespp",
             "klepne",
+            "mormor",
             "prospp",
             "pseaer",
+            "psemal",
+            "strpne",
             "psespp",
             "staaur",
+            "sermar",
+            "psecep",
         ],
         "UTI da MDRO (qualunque resistenza)",
-        select_fn=lambda df: df.resistente.astype(bool),
+        select_fn=count_mdro,
     ),
     _rate_instruction(
         "urine_cv",
         "Urine (CV, noPS, noMAC)",
         [
+            "citspp",
+            "enbaco",
             "acibcx",
             "entspp",
             "esccol",
             "kleoxy",
             "klespp",
             "klepne",
+            "mormor",
             "prospp",
             "pseaer",
+            "psemal",
+            "strpne",
             "psespp",
             "staaur",
+            "sermar",
+            "psecep",
         ],
         "CAUTI da MDRO (qualunque resistenza)",
-        select_fn=lambda df: df.resistente.astype(bool),
+        select_fn=count_mdro,
     ),
 ]

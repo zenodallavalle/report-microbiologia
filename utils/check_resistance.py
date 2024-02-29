@@ -111,6 +111,8 @@ def _check_resistance_and_validity(df):
         elif is_sorveglianza_attiva:
             resistances.add("MDR")
         resistances = evaluate_mdr_mech(resistances)
+        if "CAR" in resistances and "MDR" in resistances and len(resistances) == 2:
+            resistances.remove("MDR")
         return "|".join(resistances)
 
     elif df.id_gruppo_microbo.iloc[0] == "acibcx":
