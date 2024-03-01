@@ -340,13 +340,6 @@ rate_instructions = [
     _rate_instruction(
         "sorv_pass",
         "Sorveglianza passiva (noPS, noMAC)",
-        "enbaco",
-        "Enterobacter cloacae complex (qualunque)",
-        select_fn=lambda df: df.resistente.astype(bool),
-    ),
-    _rate_instruction(
-        "sorv_pass",
-        "Sorveglianza passiva (noPS, noMAC)",
         "clodif",
         "C. difficile",
         select_fn=lambda df: df.resistente.map(lambda x: True),
@@ -410,6 +403,7 @@ rate_instructions = [
         "sorv_pass",
         "Sorveglianza passiva (noPS, noMAC)",
         [
+            "enbaco",
             "prospp",
             "kleoxy",
             "klespp",
