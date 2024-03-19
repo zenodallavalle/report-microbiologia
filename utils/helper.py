@@ -141,6 +141,13 @@ def _safe_decode(x: bytes):
     except:
         return x.decode("windows-1252")
 
+def _clean_line(x:str):
+    if x.endswith(';'):
+        return x[:-1]
+    return x
+
+def _safe_decode_and_clean(x):
+    return _clean_line(_safe_decode(x))
 
 def _custom_reader(path):
     def gen_summed_lines(lines, i, j):
@@ -149,7 +156,7 @@ def _custom_reader(path):
     with open(path, "rb") as f:
         lines = f.readlines()
     try:
-        lines = list(map(_safe_decode, lines))
+        lines = list(map(_safe_decode_and_clean, lines))
     except UnicodeDecodeError:
         print("Error decoding file: {}".format(path))
 
@@ -159,7 +166,7 @@ def _custom_reader(path):
     while i < len(lines):
         yielded = False
         if len(lines[i].split(",")) == n_expected_fields:
-            yield lines[i].split(",")
+            yield lines[i].replace(';', '').strip().split(",")
             i += 1
             continue
         else:

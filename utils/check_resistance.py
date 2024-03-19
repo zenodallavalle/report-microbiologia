@@ -42,11 +42,11 @@ def _check_resistance_and_validity(df):
 
     kpc_value = _extract_value(df, "KPC")
     kpc_alternative_value = _extract_value(df, "CARBA")
-    imp_value = _extract_value(df, "IMP")
-    ndm_value = _extract_value(df, "NDM")
+    imp_value = _extract_value(df, "imp")
+    ndm_value = _extract_value(df, "ndm")
     carba_r_value = _extract_value(df, "CARBA-R")
-    oxa_value = _extract_value(df, "OXA")
-    vim_value = _extract_value(df, "VIM")
+    oxa_value = _extract_value(df, "oxa")
+    vim_value = _extract_value(df, "vim")
 
     def evaluate_mdr_mech(resistances):
         if (pd.notnull(kpc_value) and kpc_value) or (
