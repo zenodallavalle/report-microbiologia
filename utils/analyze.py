@@ -22,6 +22,7 @@ from .report_helper import (
     generate_resistenti_text_for_excel_output,
     set_column_widths,
     set_wb_filters,
+    simplify_resistances,
 )
 
 from .instructions import autogenerate
@@ -74,16 +75,16 @@ def analyze(
     df["n_resistenze"] = (
         df.resistente.replace("", pd.NA)
         .dropna()
-        .replace(r">.*", "", regex=True)  # With this MDR>xxx will be converted to MDR
         .str.replace("||", "|", regex=False)  # The previous line will leave some || in the string
         .str.split("|")
+        # .apply(simplify_resistances, na_action='ignore') # This delete the part that specifies for each MDR the nature of resistance
         # .map(lambda ress: len(set(ress)),na_action="ignore") # At this point if there was a MDR>xxx and MDR in the same row, they will be counted as 1
         .map(len, na_action="ignore") # This instead will simply count the number of resistances
     ) + (
         df.resistente.replace("", pd.NA)
         .dropna()
         .str.split("|")
-        .map(lambda ress: "MDR" in ress, na_action="ignore").replace(True, 0.1)  # Add a little bit of priority to MDR (.1)
+        .map(lambda ress: any(["MDR" in res for res in ress]), na_action="ignore").replace(True, 0.1)  # Add a little bit of priority to MDR (.1)
     )
     # fmt: on
     # not_null_resistente_df contains only the rows with verfied resistance (if the antibiogram wasn't executed, the row is dropped)

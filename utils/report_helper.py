@@ -1,7 +1,8 @@
 from itertools import combinations
-from typing import Optional
+from typing import Iterable, Optional
 import openpyxl
 import pandas as pd
+import re
 
 _widths = pd.read_csv("utils/widths.csv", index_col=[0, 1])
 
@@ -91,22 +92,26 @@ def generate_date_reference_for_excel_output(year: int, month: Optional[int] = N
         return f"{year}"
 
 
+def simplify_resistances(resistances: Iterable):
+    return list(set([re.sub(r">.*", "", resistance) for resistance in resistances]))
+
+
 def generate_resistenti_text_for_excel_output(df: pd.DataFrame):
     # fmt: off
-    resistenze_no_details = df.resistente.replace("", pd.NA).dropna().str.replace(r'>.*', '', regex=True).str.replace('||', '|', regex=False).str.split("|")
+    resistenze_no_details = df.resistente.replace("", pd.NA).dropna().str.replace('||', '|', regex=False).str.split("|").map(simplify_resistances, na_action='ignore')
     id_gruppo_microbo = df.id_gruppo_microbo.iloc[0]
     unique_resistenze = resistenze_no_details.explode().unique()
     mdr_details = df.resistente.replace("", pd.NA).dropna().str.split('|').explode()
     mdr_details = mdr_details[mdr_details.apply(lambda x: "MDR>" in x)]
     mdr_details = mdr_details.str.replace('MDR>', '', regex=False)
-    n_mdr = df.resistente.replace("", pd.NA).dropna().str.replace(r'>.*', '', regex=True).str.replace('||', '|', regex=False).str.split("|").apply(lambda ress: 'MDR' in ress).sum()
+    n_mdr = df.resistente.replace("", pd.NA).dropna().str.replace('||', '|', regex=False).str.split("|").apply(lambda ress: any(['MDR' in res for res in ress])).sum()
     # fmt: on
-    if len(mdr_details) < n_mdr:
-        mdr_details = pd.concat(
-            [mdr_details, pd.Series(["NDD"] * (n_mdr - len(mdr_details)))],
-            axis=0,
-            ignore_index=True,
-        )
+    # if len(mdr_details) < n_mdr:
+    #     mdr_details = pd.concat(
+    #         [mdr_details, pd.Series(["NDD"] * (n_mdr - len(mdr_details)))],
+    #         axis=0,
+    #         ignore_index=True,
+    #     )
     text_chunks = []
     for i in range(1, len(unique_resistenze) + 1):
         for resistances in combinations(unique_resistenze, i):

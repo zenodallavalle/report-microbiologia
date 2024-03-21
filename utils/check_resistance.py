@@ -49,28 +49,40 @@ def _check_resistance_and_validity(df):
     vim_value = _extract_value(df, "vim")
 
     def evaluate_mdr_mech(resistances):
+        detail = False
         if (pd.notnull(kpc_value) and kpc_value) or (
             pd.notnull(kpc_alternative_value) and kpc_alternative_value
         ):
             resistances.add("MDR>KPC")
+            detail = True
             resistances.add("MDR")
         if pd.notnull(imp_value) and imp_value:
             resistances.add("MDR>IMP")
+            detail = True
             resistances.add("MDR")
         if pd.notnull(ndm_value) and ndm_value:
             resistances.add("MDR>NDM")
+            detail = True
             resistances.add("MDR")
         if pd.notnull(oxa_value) and oxa_value:
             resistances.add("MDR>OXA-48")
+            detail = True
             resistances.add("MDR")
         if pd.notnull(vim_value) and vim_value:
             resistances.add("MDR>VIM")
+            detail = True
             resistances.add("MDR")
 
         # Carba-R is not an MDR, is only a resistance mechanism
         if pd.notnull(carba_r_value) and carba_r_value:
+            detail = True
             resistances.add("CAR")
 
+        if "MDR" in resistances and not detail:
+            resistances.add("MDR>NDD")
+
+        if "MDR" in resistances:
+            resistances.remove("MDR")
         return resistances
 
     if df.id_gruppo_microbo.iloc[0] in (
@@ -111,8 +123,8 @@ def _check_resistance_and_validity(df):
         elif is_sorveglianza_attiva:
             resistances.add("MDR")
         resistances = evaluate_mdr_mech(resistances)
-        if "CAR" in resistances and "MDR" in resistances and len(resistances) == 2:
-            resistances.remove("MDR")
+        # if "CAR" in resistances and "MDR" in resistances and len(resistances) == 2:
+        #     resistances.remove("MDR")
         return "|".join(resistances)
 
     elif df.id_gruppo_microbo.iloc[0] == "acibcx":
