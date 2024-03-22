@@ -1,5 +1,5 @@
 from itertools import combinations
-from typing import Iterable, Optional
+from typing import Iterable, List, Optional
 import openpyxl
 import pandas as pd
 import re
@@ -96,57 +96,51 @@ def simplify_resistances(resistances: Iterable):
     return list(set([re.sub(r">.*", "", resistance) for resistance in resistances]))
 
 
+def _generate_resistenti_text_for_mdr_details(resistenze: pd.Series) -> List:
+    unique_resistenze = resistenze.explode().unique()
+    text_chunks = []
+    for i in range(1, len(unique_resistenze) + 1):
+        for resistances in combinations(unique_resistenze, i):
+            mask = resistenze.apply(
+                lambda resistenze_di_ogni_mo: all(
+                    r in resistenze_di_ogni_mo for r in resistances
+                )
+            )
+            n = mask.sum()
+            if n == 0:
+                continue
+            legend = "DET -> " + "+".join(resistances).replace("MDR>", "").strip()
+            text_chunks.append(f"{legend}: {n}")
+    return text_chunks
+
+
 def generate_resistenti_text_for_excel_output(df: pd.DataFrame):
     # fmt: off
     resistenze_no_details = df.resistente.replace("", pd.NA).dropna().str.replace('||', '|', regex=False).str.split("|").map(simplify_resistances, na_action='ignore')
-    id_gruppo_microbo = df.id_gruppo_microbo.iloc[0]
     unique_resistenze = resistenze_no_details.explode().unique()
     mdr_details = df.resistente.replace("", pd.NA).dropna().str.split('|').explode()
     mdr_details = mdr_details[mdr_details.apply(lambda x: "MDR>" in x)]
     mdr_details = mdr_details.str.replace('MDR>', '', regex=False)
-    n_mdr = df.resistente.replace("", pd.NA).dropna().str.replace('||', '|', regex=False).str.split("|").apply(lambda ress: any(['MDR' in res for res in ress])).sum()
     # fmt: on
-    # if len(mdr_details) < n_mdr:
-    #     mdr_details = pd.concat(
-    #         [mdr_details, pd.Series(["NDD"] * (n_mdr - len(mdr_details)))],
-    #         axis=0,
-    #         ignore_index=True,
-    #     )
     text_chunks = []
     for i in range(1, len(unique_resistenze) + 1):
         for resistances in combinations(unique_resistenze, i):
-            if len(resistances) == 2:
-                if (
-                    "MDR" in resistances
-                    and "ESBL" in resistances
-                    and id_gruppo_microbo
-                    in (
-                        "esccol",
-                        "klespp",
-                        "kleoxy",
-                        "klepne",
-                        "klespe",
-                        "prospp",
-                        "mormor",
-                    )
-                ):
-                    # Non creare la combinazione MDR+ESBL per i batteri che non possono avere entrambe le resistenze
-                    continue
-                elif (
-                    "CAR-R" in resistances
-                    and "MDR" in resistances
-                    and id_gruppo_microbo == "psespp"
-                ):
-                    # Non creare la combinazione CAR-R+MDR per i batteri che non possono avere entrambe le resistenze
-                    continue
             mask = resistenze_no_details.apply(
                 lambda resistenze_di_ogni_mo: all(
                     r in resistenze_di_ogni_mo for r in resistances
                 )
             )
             n = mask.sum()
+            if n == 0:
+                continue
             legend = "+".join(resistances)
             text_chunks.append(f"{legend}: {n}")
-    for index, value in mdr_details.value_counts().items():
-        text_chunks.append(f"MDR -> {index}: {value}")
+    resistenze = (
+        df.resistente.replace("", pd.NA)
+        .dropna()
+        .str.replace("||", "|", regex=False)
+        .str.split("|")
+    )
+    if len(unique_resistenze) > 1:
+        text_chunks += _generate_resistenti_text_for_mdr_details(resistenze=resistenze)
     return "\n".join(text_chunks)
