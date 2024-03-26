@@ -141,9 +141,6 @@ def generate_resistenti_text_for_excel_output(df: pd.DataFrame):
         .str.replace("||", "|", regex=False)
         .str.split("|")
     )
-    details_resistenze = _generate_resistenti_text_for_mdr_details(
-        resistenze=resistenze
-    )
-    if len(details_resistenze) > 1:
-        text_chunks += details_resistenze
+    if "MDR" in unique_resistenze:
+        text_chunks += _generate_resistenti_text_for_mdr_details(resistenze=resistenze)
     return "\n".join(text_chunks)
